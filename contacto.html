@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Tinder</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/256/7603/7603200.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Estilos/estilo4.css">
+    <script src="./Java/java.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <div class="img">
+            <img src="./Imagenes/pp.jpg" width="150px" height="70px" >
+            
+        </div>
+        <div class="frase">
+            <p>Pet Tinder</p>
+        </div>
+        <div class="menu">
+            <input type="button" class="opcion" value="Adopta" onclick="animaliast ()">
+            <input type="button" class="opcion" value="Conocelos" onclick="conocelos ()">
+            <input type="button" class="opcion" value="contacto" onclick="contacto ()">
+            <input type="button" class="opcion" value="Cerrar Sesión" onclick="volver ()">
+        </div>
+
+    </div>
+    <div class="login">
+        <form action="enviar.php" method="post" name="formulario">
+        
+            <h1>Elige a tu amigo</h1>
+      
+            <label class="desc" id="iddog"></label>
+            <div></div>
+            <label class="desc"><img src="./Imagenes/usuario.png" width="13px" height="15px">Nombre:</label>
+            <input class="entrada" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo">
+            <label class="desc"><img src="./Imagenes/arroba.png" width="13px" height="15px">Correo: </label>
+            <input class="entrada" type="text" id="correo" name="correo" placeholder="Ingrese su correo">   
+            <label class="desc"><img src="./Imagenes/telefono.png" width="13px" height="15px">Telefono: </label>
+            <input class="entrada" type="text" id="telefono" name="telefono" placeholder="Ingrese numero de telefono">   
+            <label class="desc"><img src="./Imagenes/direccion.png" width="13px" height="15px"> Dirección:</label> 
+            <input class="entrada" type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+        
+            <div class="botones">
+                <input id="enviar" type="button" onclick="adoptar()" value="Registrarse" class="btn" />
+    
+                <input id="recuperar" type="button" onclick="animaliast()" value="Cancelar" class="btn"/>
+                <br>
+                
+                
+            </div>
+            <h3 id="datos">Encuentra a un nuevo amigo</h3>
+        </form>
+       
+       
+           
+  
+    </div>
+    <script>
+        document.getElementById("datos").innerHTML = "No has introducido tu nombre y tu password";
+    document.getElementById("iddog").innerHTML= "Id Dog: "+ localStorage.iddog;
+    </script>
+</body>
+</html>

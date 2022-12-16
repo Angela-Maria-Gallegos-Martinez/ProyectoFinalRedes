@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Tinder</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/256/7603/7603200.png" type="image/x-icon">
+   
+    <link rel="stylesheet" href="./Estilos/estilo2.css">
+    <script src="./Java/java.js"></script>
+    
+    <script src="http://api.petfinder.com/pet.getRandom?key='cerO0DymkXLZquxREf7pcHApoudyzQtPX6JLGkp48jSVWWXEm2"></script>
+    </head>
+<body>
+    <div class="logo">
+        <div class="img">
+            <img src="./Imagenes/pp.jpg" width="150px" height="70px" >
+            
+        </div>
+        <div class="frase">
+            <p>Pet Tinder</p>
+        </div>
+        <div class="menu">
+            <input type="button" class="opcion" value="Adopta" onclick="animaliast ()">
+            <input type="button" class="opcion" value="Conocelos" onclick="conocelos ()">
+            <input type="button" class="opcion" value="contacto" onclick="contacto ()">
+            <input type="button" class="opcion" value="Cerrar Sesión" onclick="volver ()">
+        </div>
+
+    </div>
+    <div class="login">
+        
+        <form action="enviar.php" method="post" name="formulario">
+            
+        <h1>¡Adoptame!</h1>
+        <div class="todos">
+            <div class="izq">
+                <div class="adp">
+                    <img src="./Imagenes/1.jpg" class="imgp" >
+                        <div class="infd">
+                            <form action=""></form>
+                            <label class="name">Nombre: Crema</label>
+                            <label class="edad">Edad: 8 meses</label>
+                            <label class="raza">Raza: Buggie</label>
+                            <div></div>
+                            <button class="bp" onclick="irad(1)">Adoptar</button>
+                    
+                        </div>
+                     </div>
+                <div class="adp">
+                    <img src="./Imagenes/3.jpg" class="imgp" >
+                    <div class="infd">
+                        
+                        <label class="name">Nombre: Aura</label>
+                        <label class="edad">Edad: 1 Año</label>
+                        <label class="raza">Raza: Chihuahua</label>
+                        <div></div>
+                        <button class="bp" onclick="irad(3)">Adoptar</button>
+                    </div>
+                    
+                </div>
+                <div class="adp">
+                    <img src="./Imagenes/5.jpg" class="imgp" >
+                    <div class="infd">
+                        <label class="name">Nombre: Dobi</label>
+                        <label class="edad">Edad: 4 meses</label>
+                        <label class="raza">Raza: Labrador</label>
+                        <div></div>
+                        <button class="bp" onclick="irad(5)">Adoptar</button>
+                    </div>
+                    
+                </div>
+                <div class="adp">
+                    <img src="./Imagenes/7.jpg" class="imgp" >
+                    <div class="infd">
+                        <label class="name">Nombre: Ciara</label>
+                    <label class="edad">Edad: 3 años</label>
+                    <label class="raza">Raza: Boxer</label>
+                    <div></div>
+                            <button class="bp" onclick="irad(7)">Adoptar</button>
+                    </div>
+                    
+                </div>
+                <div class="adp">
+                    <img src="./Imagenes/9.jpg" class="imgp" >
+                    <div class="infd">
+                        <label class="name">Nombre: Ris</label>
+                        <label class="edad">Edad: 3 años</label>
+                        <label class="raza">Raza: Labarador</label>
+                        <div></div>
+                            <button class="bp" onclick="irad(9)">Adoptar</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="der">
+                <div class="adp1">
+                    <img src="./Imagenes/2.jpg" class="imgp" >
+                    <div class="infd">
+                        <label class="name">Nombre: Kou</label>
+                    <label class="edad">Edad: 1 mes</label>
+                    <label class="raza">Raza: Pitbull</label>
+                    <div></div>
+                            <button class="bp" onclick="irad(2)">Adoptar</button>
+                    </div>
+                    
+                </div>
+                <div class="adp">
+                    <img src="./Imagenes/4.jpg" class="imgp" >
+                    <div class="infd">
+                        <label class="name">Nombre: Fiu</label>
+                    <label class="edad">Edad: 4 años</label>
+                    <label class="raza">Raza: Bernardo</label>
+                    <div></div>
+                            <button class="bp" onclick="irad(4)">Adoptar</button>
+                    </div>
+                    
+                </div>
+                <div class="adp">
+                    <img src="./Imagenes/6.jpg" class="imgp" >
+                    <div class="infd">
+                        <label class="name">Nombre: Achi</label>
+                        <div></div>
+                    <label class="edad">Edad: 1 año</label>
+                    <div></div>
+                    <label class="raza">Raza: Labrador</label>
+                    <div></div>
+                            <button class="bp" onclick="irad(6)">Adoptar</button>
+                    </div>
+                    
+                </div>
+                <div class="adp">
+                    <img src="./Imagenes/8.jpg" class="imgp" >
+                    <div class="infd">
+                        <label class="name">Nombre: Akita</label>
+                        <div></div>
+                    <label class="edad">Edad: 4 años</label>
+                    <div></div>
+                    <label class="raza">Raza: Doberman</label>
+                    <div></div>
+                            <button class="bp" onclick="irad(8)">Adoptar</button>
+                    </div>
+                    
+                </div>
+                <div class="adp">
+                    <img src="./Imagenes/10.jpg" class="imgp" >
+                    <div class="infd">
+                            <label class="name">Nombre: Viu</label>
+                            <label class="edad">Edad: 1 año</label>
+                            <label class="raza">Raza: Boxer</label>
+                            <div></div>
+                            <button class="bp" onclick="irad(10)">Adoptar</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+           
+    </form>
+    </div>
+    <!--<header class="header">
+        <div class="contenedor">
+            <span class="icon menu" id="icon-menu">
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="" class="menu-link select" onclick="animaliast()" >Animalías Tinder</a>
+                        </li>
+                        <li class="menu-item"><a href="" class="menu-link" onclick="estado()">Estado</a>
+                        </li>
+                        <li class="menu-item">
+                             <a href="" class="menu-link" onclick="contacto()">Contacto</a>
+                         </li>
+                         <li class="menu-item">
+                             <a id="usuariop" href="" class="menu-link" onclick="perfil()">Perfil</a>
+                        </li>
+                    </ul>
+                </nav>
+            </span>
+        </div>
+        <div class="info">
+            <div class="infoani">
+
+            </div>
+        </div>
+        <script>
+            const request = new XMLHttpRequest();
+            request.open('GET', 'https://api.petfinder.com/pet.find?format=json&key=8ac68434b9dd43cd2658c103c7423e41&animal=dog&location=200&callback=callback', true);
+
+            request.onload = function () {
+                
+                document.getElementById('perfils').innerHTML = localStorage.nombre;
+                if (request.status >= 200 && request.status < 400) {
+                    const data = JSON.parse(this.response);
+                    data.forEach((animals) => {
+                    console.log(animals.type);
+                    document.getElementById('infoani') = animals.type;
+                    });
+                } else {
+                    console.log('Ha ocurrido un error conc ódigo ' + request.status);
+}
+            }
+            request.send();
+            
+
+       
+    </header>
+     </script>!-->
+</body>
+</html>

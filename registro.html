@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Estilos/estilo1.css">
+    <script src="Java/java.js"></script>
+    <title>Pet Tinder</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/256/7603/7603200.png" type="image/x-icon">
+   
+    <link href="https://file.myfontastic.com/Bjf787by3nzXKdD94gsqb8/icons.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body background="./Imagenes/huellitas.png">
+    
+    <div class="logo">
+        <div class="img">
+            <img src="./Imagenes/pp.jpg" width="150px" height="70px" >
+            
+        </div>
+        <div class="frase">
+            <p>Pet Tinder</p>
+        </div>
+
+    </div>
+    <div class="login">
+        <form action="enviar.php" method="post" name="formulario">
+        
+            <h1>Registro de usuario</h1>
+      
+            
+            <input class="entrada" type="text" id="idu" name="idu" placeholder="Id de usuario"> 
+            <label class="desc"><img src="./Imagenes/usuario.png" width="13px" height="15px">Nombre:</label>
+            <input class="entrada" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo">
+            <label class="desc"><img src="./Imagenes/arroba.png" width="13px" height="15px">Correo: </label>
+            <input class="entrada" type="text" id="correo" name="correo" placeholder="Ingrese su correo">   
+            <label class="desc"><img src="./Imagenes/password.ico" width="13px" height="15px">Password: </label>
+            <input class="entrada" type="text" id="password" name="password" placeholder="Ingresa tu password">
+            <label class="desc"><img src="./Imagenes/telefono.png" width="13px" height="15px">Telefono: </label>
+            <input class="entrada" type="text" id="telefono" name="telefono" placeholder="Ingrese numero de telefono">   
+            <label class="desc"><img src="./Imagenes/direccion.png" width="13px" height="15px"> Dirección:</label> 
+            <input class="entrada" type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+        
+            <div class="botones">
+                <input id="enviar" type="button" onclick="registrarse()" value="Registrarse" class="btn" />
+    
+                <input id="recuperar" type="button" onclick="volver()" value="Cancelar" class="btn"/>
+                <br>
+                
+                
+            </div>
+            <h3 id="datos">Encuentra a un nuevo amigo</h3>
+        </form>
+    </div>
+    
+    
+    
+
+</body>
+</html>

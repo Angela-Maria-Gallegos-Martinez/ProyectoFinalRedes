@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Tinder</title>
+    <link rel="stylesheet" href="./Estilos/estilo3.css">
+    <script src="./Java/java.js"></script>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/256/7603/7603200.png" type="image/x-icon">
+    
+    <script src="http://api.petfinder.com/pet.getRandom?key='cerO0DymkXLZquxREf7pcHApoudyzQtPX6JLGkp48jSVWWXEm2"></script>
+    </head>
+<body>
+    <div class="logo">
+        <div class="img">
+            <img src="./Imagenes/pp.jpg" width="150px" height="70px" >
+            
+        </div>
+        <div class="frase">
+            <p>Pet Tinder</p>
+        </div>
+        <div class="menu">
+            <input type="button" class="opcion" value="Adopta" onclick="animaliast ()">
+            <input type="button" class="opcion" value="Conocelos" onclick="conocelos ()">
+            <input type="button" class="opcion" value="contacto" onclick="contacto ()">
+            <input type="button" class="opcion" value="Cerrar Sesión" onclick="volver ()">
+        </div>
+
+    </div>
+    <div class="login">
+        
+       
+        <h1>¡Adoptame!</h1>
+        <div class="todos">
+            <h1 id="header">Selecciona tu perro</h1>
+            <select class="breed-select" id="" onchange="changeDoggo(this)">
+                <option value="option">Selecciona tu perro</option>
+            </select>
+            <div class="imgpp">
+                <img id="doggo-image" src="" alt="doggo"></img>
+            </div>
+            <div class="descpp">
+                <dl id="doggo-description">
+
+                </dl>
+            </div>
+            
+        </div>
+           
+  
+    </div>
+    <script src="./Java/codigo.js" type="text/javascript"></script>
+</body>
+</html>
